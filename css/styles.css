@@ -17,8 +17,7 @@ body {
 }
 .container {
     display: grid;
-    justify-items: center;
-    /* place-items: center; */
+    place-items: center;
     max-width: 1440px;
     max-height: 100vh;
     margin: 250px auto;
@@ -108,6 +107,7 @@ body {
     .container {
         width: 70vw;
         height: 90vh;
+        padding: 0;
     }
     .box-1 {
         grid-area: box-1;
@@ -117,8 +117,8 @@ body {
         grid-area: box-2;
     
     }
-    .container {
-       padding: 1.333rem;
+    body {
+        font-size: 0.75REM;
     }
     
     .box-1 h1, p {
