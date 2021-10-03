@@ -12,7 +12,7 @@
     --stat-heading: hsla(0, 0%, 100%, 0.6);
 }
 body {
-    font-size: 0.9375;
+    font-size: 0.9375rem;
     background-color: var(--main-color);
 }
 .container {
@@ -26,7 +26,6 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: minmax(0, 400px); */
     border-radius: 8px;
     overflow: hidden;  /*why was hidden needed? */
 }
@@ -46,7 +45,7 @@ body {
     font-size: 0.9375rem;
     color: var(--main-paragraph);
     padding: 1.875rem 0 3.75rem 0;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 .stats {
     display: flex;
@@ -55,6 +54,7 @@ body {
 .stats .numbers h2 {
     color: var(--main-heading);
     font-family: 'Inter';
+    font-size: 1.8rem;
 }
 .stats .numbers p {
     text-transform: uppercase;
@@ -105,12 +105,13 @@ body {
         "box-1";
     }
     .container {
-        width: 70vw;
-        height: 90vh;
+        width: 90vw;
+        height: 50vh;
         padding: 0;
     }
     .box-1 {
         grid-area: box-1;
+        padding: 60px 0 15px;
         
     }
     .box-2 {
@@ -118,23 +119,27 @@ body {
     
     }
     body {
-        font-size: 0.75REM;
-    }
-    
-    .box-1 h1, p {
-    text-align: center;
-    
+        font-size: 0.75rem;
     }
     .box-1 .main-text {
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 1rem;
+        font-size: 0.9375rem;
         color: var(--main-paragraph);
-        padding: 1.875 0 0.625rem 0.625rem;
-        line-height: 1.7;
+        padding: 16px 12px 16px;
+        line-height: 1.5;
     }
+    .box-1 h1, .main-text {
+    text-align: center;
+    
+    }
+    header h1 {
+        font-size: 1.7rem;
+    }
+  
     .box-1 .stats {
         display: block;
         text-align: center;
+        margin: 2rem 2rem;
     
     }
     .numbers {
@@ -145,6 +150,6 @@ body {
     }
     .numbers:nth-child(3) {
         padding-left: 0;
+      
     }
 }
-
